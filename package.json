@@ -1,0 +1,14 @@
+{
+  "name": "glitzi",
+  "version": "1.0.0",
+  "description": "Prueba automatizacion para agendar cita",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Oscar Cantu",
+  "license": "ISC",
+  "dependencies": {
+    "cypress": "^7.6.0"
+  }
+}
