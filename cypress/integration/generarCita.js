@@ -23,15 +23,12 @@ describe('Se realiza la ejecución para generar una nueva cita', function(){
         cy.get('#add-service').click().wait(2000);
         cy.get('.btn').contains('Programa tu cita').click({ force: true });
         cy.get('.name-price > :nth-child(1)').should('contain','Masaje Ayurveda');
-    })
-
-    it('Programar cita',function(){
         cy.get('#create-appointment').contains('Programa tu cita').click();
         cy.get("body").then($body => {
             if ($body.find('.title','Acceder').length > 0) {
                 cy.get('#email').type('mail17764@irondev.com.mx');
                 cy.get('#password').type('123456');
-                cy.get('.login > .btn-primary').click().wait(2000);
+                cy.get('.login > .btn-primary').click().wait(3000);
                 cy.log('Se realiza login nuevamente')
             }else{
                 cy.log('no se mostro login')
